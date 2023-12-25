@@ -1,1 +1,64 @@
 /* write down the css for Carousel in this file */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#carousel {
+  height: 60vh;
+  width: 27.5vw;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  overflow: hidden;
+}
+.arrow{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    width: 3vw;
+    background-color: rgba(0, 0, 0, 0.551);
+}
+.left{
+    justify-self: flex-start;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.right{
+    justify-self: flex-end;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.img{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.img>img{
+    height: 60vh;
+    max-width: 21.5vw;
+}
+.title, .subtitle{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.76);
+    padding: 1vmin;
+    font-size: 3vmin;
+    font-weight: 700;
+    border-radius: 10px;
+}
+.title{
+    top: 3vh;
+}
+
+.subtitle{
+    bottom: 3vh;
+    font-size: 2vmin;
+}
